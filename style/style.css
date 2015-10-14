@@ -1,0 +1,49 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #EAEAEA;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+h1, p {
+	text-decoration: underline ;
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	height: 100px;
+	background-color: #0066FF;
+}
+
+.content {
+
+	padding: 10px 0;
+}
+
+.contentForm {
+	width: auto;
+	height: auto;
+	padding: 5% 25% 5% 25%;
+	border-top: solid #0066FF 4px;
+	border-bottom: solid #0066FF 4px;	
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	color: #fff;
+	font-size: 10px;
+	padding: 10px 0;
+	background-color: #000;
+}
